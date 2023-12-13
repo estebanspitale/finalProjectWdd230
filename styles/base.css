@@ -1,0 +1,429 @@
+:root{
+  --font-family: "Verdana", serif;
+  --text-align: center;
+  --background-image: linear-gradient(0deg, #04003a 0%, #4638ff 100%);
+  --background-color-ad: #00bfff;
+}
+
+
+body {
+  margin: 0;
+}
+header,
+footer {
+  background-color: #1359a4;
+  font-family: var(--font-family);
+  color: whitesmoke;
+  background-image: var(--background-image);
+}
+header {
+  border-bottom: 1px solid black;
+  text-align: var(--text-align);
+}
+
+header li:first-child {
+  display: block;
+}
+header nav li {
+  display: none;
+}
+header li a {
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+.responsive li {
+  display: block;
+}
+header nav a:hover {
+  background-color: #bbb;
+  color: #052033;
+}
+header ul {
+  padding: 0;
+  text-align: var(--text-align);
+  margin: 0;
+  margin-top: 20px;
+}
+header li {
+  list-style: none;
+}
+.active {
+  background-color: #16427c;
+  color: #b5fffc;
+}
+header a {
+  display: block;
+}
+header a,
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+/* Dark Mode */
+#mode {
+	position: absolute;
+	top: 0.2rem;
+	right: 0.25rem;
+	font-size: 2rem;
+	cursor: pointer;
+}
+main {
+  font-family: var(--font-family);
+  background-color: #c2eeff;
+}
+
+.hero img {
+  width: 100%;
+}
+.hero {
+  position: relative;
+}
+/* Responsive Image */
+.herolabel button {
+	position: absolute;
+  width: 20%;
+  top: 15px;
+  left: 5%;
+	background: radial-gradient(#fff, #1f3ab1);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 1rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.herolabel p {
+  text-align: var(--text-align);
+	margin: 0;
+	font-size: 100%;
+	font-family:"Great Vibes", serif;
+}
+h2 {
+  text-align: center;  
+}
+/* ----------- Slideshow-container ----------- */
+
+/* Slideshow container */
+.slideshow-container {
+  width:50%;
+  height: 50%;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+/* Caption text */
+.text {
+  color: #097074;
+  font-size: 100%;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+h3{
+  text-align: center;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .2}
+  to {opacity: 1}
+}
+/*---------------------END Slideshow---------------------*/
+
+footer {
+  text-align: center;
+  padding: 2%;
+  font-size: 20px;
+}
+footer p {
+  text-align: var(--text-align);
+  margin: 0;
+}
+
+/* ---Join--- */
+
+.join{
+  display: grid;    
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+}
+
+.join > div{
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px black solid;
+  border-radius: 10px;  
+  width: 85%;
+  min-width: 400px;
+}
+
+label.top{
+  display:block;
+  padding-top: 1rem;
+  border-radius: 10px;
+}
+
+label.top input, label.top textarea{
+  display:block;
+  font-size: 1.2rem;
+  padding: .5rem;
+  width: 20rem;
+  max-width: 20rem;
+  background-color: rgb(241, 241, 241);
+}
+
+label.ml{
+  display: block;
+  margin-right: .2rem;
+  font-size: 1.3rem;  
+  padding-top: .5rem;
+  font-family: Tahoma, sans-serif;
+}
+
+label.ml input{
+  margin-right: 1rem;
+}
+
+.submit{
+  color: white;
+  margin: 1rem 0 0 0;
+  padding: .5rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  background: linear-gradient( rgb(95, 87, 255) 0%, rgba(9,90,121,1) 53%);
+  width: 96%;
+  max-width: 20rem;
+}
+
+form label.top input:required {
+  border-left: red solid 6px;
+}
+form label.top input:required:valid {
+  border-left: green solid 6px;
+}
+
+.join-confirm{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: var(--text-align);
+}
+
+#thankyou h1{
+  text-align: var(--text-align);
+  margin-block-start: 2%;
+  margin-block-end: 2%;
+  padding: 1rem 0;
+}
+
+/* ------ DIRECTORY ------ */
+.directory {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  margin: 0 auto;
+  margin-bottom: 2%;
+  width: 90%;
+}
+
+.view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.view button {
+  margin: 1rem;
+  padding: .5rem;
+  border: #eaf1f9;
+  border-radius: .4rem;
+  color: #eaf1f9;
+  background-color: #023368;
+}
+
+.directory h1 {
+  padding: 1rem 0 0 0;
+  text-align: var(--text-align);
+  color: #023368;
+}
+
+article {
+  padding: 1.5rem;
+  border-radius: .4rem;
+  background-color: #014397;
+}
+
+.directory-grid {
+  grid-column: 1/3;
+  grid-row: 4/5;
+}
+
+.member-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  padding: 1.5rem;
+  border: solid .2rem  #014397;
+  border-radius: .4rem;
+  background-color: #FFFFFF;
+}
+
+.d-image {
+  margin: .5rem auto;
+  border-radius: .4rem;
+  max-height: 120px;
+  max-width: 250px;
+}
+.d-name {
+  text-align: var(--text-align);
+  color: #04003a;
+}
+
+.member-card:nth-child(4) .d-image{
+  padding: .2rem 0;
+}
+
+.d-address {
+  margin: 1rem;
+  text-align: var(--text-align);
+  color: #555;
+  transition: .2s;
+}
+
+.d-phone {
+  margin-top: .5rem;
+  color: #555;
+  transition: .2s;
+}
+
+.d-websiteURL {
+  margin-top: .5rem;
+  color: #555;
+  transition: .2s;
+}
+
+.d-websiteURL:hover {
+  color: #014397;
+  font-weight: bold;
+}
+
+/*Weather*/
+
+#weatherjs{
+  text-align: var(--text-align);
+  width: 100%;
+}
+
+.forecast-five-days{
+  width: 90%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color:#43d0ff;
+  border-radius: 30px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.forecast-five-days h3{
+  font-family: var(--font-family);
+  letter-spacing: 1px;
+  text-align: var(--text-align);
+}
+
+.forecast-five-days p{
+  font-family: var(--font-family);
+  font-weight: bold;
+  text-align: var(--text-align);
+}
+
+.forecast-five-days .forecast{
+  display: flex;
+  justify-content: center;
+}
+
+.forecast div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.forecast img{
+  width: 80%;
+}
+
+.forecast p{
+  font-size: 80%;
+}
+
+/*Banner*/
+
+#banner {
+  text-align: center;
+  box-shadow: var(--background-color-ad);
+  padding: 30px;
+}
+
+#temp-max-message {
+  font-size: 1.5rem;
+}
+
+.exit {
+  text-align: center;
+  cursor: pointer;
+}
+
+.exit a {
+  text-decoration: none;
+  text-align: center;
+}
+
+/*Social Media*/
+
+.social-media {
+  display: grid;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+.twitter {
+  grid-column: 1/2;
+  background-color: whitesmoke;
+}
+
+.facebook {
+  grid-column: 2/3;
+  background-color: whitesmoke;
+}
+
+.instagram {
+  grid-column: 3/4;
+  background-color: whitesmoke;
+}
+
+
+@media screen and (min-width: 900px) {
+/* DIRECTORY */
+    
+.directory {
+  max-width: 1500px;
+  min-width: 800px;
+}
+
+.directory-list .d-name {
+  min-width: 250px;
+  width: auto;
+}
+}
