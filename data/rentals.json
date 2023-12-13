@@ -3,109 +3,67 @@
         {
             "model": "Honda Metro Scooter",
             "maxpersons": 1,
-            "price": [
-                {
-                 "reservation": {
-                    "halfday": "$20",
-                    "fullday": "$30"
-                 },
-                 "walkin": {
-                    "halfday": "$25",
-                    "fullday": "$35"
-                 }   
-                }
-            ],
-            "img": "https://powersports.honda.com/-/media/products/family/metropolitan/trims/trim-main/metropolitan/2023/2023-metropolitan-blue_metallic-650x380.png"
+            "reservhalfday(3hs)": "$20",
+            "reservfullday": "$30",
+            "walkinhalfday(3hs)": "$25",
+            "walkinfullday": "$35",
+            "img": "https://powersports.honda.com/-/media/products/family/metropolitan/trims/trim-main/metropolitan/2023/2023-metropolitan-blue_metallic-650x380.png",
+            "description":"Honda Motor Scooters"
         },
 
         {
             "model": "Honda Dio Scooter",
             "maxpersons": 2,
-            "price": [
-                {
-                 "reservation": {
-                    "halfday": "$30",
-                    "fullday": "$40"
-                 },
-                 "walkin": {
-                    "halfday": "$35",
-                    "fullday": "$45"
-                 }   
-                }
-            ],
-            "img": "https://flux.somosmoto.pe/r/https://somosmoto.pe/images/models/colors/honda-dio-2021-naranja-e02915.png?width=1082"
+            "reservhalfday(3hs)": "$30",
+            "reservfullday": "$40",
+            "walkinhalfday(3hs)": "$35",
+            "walkinfullday": "$45",
+            "img": "https://powersports.honda.com/-/media/products/family/metropolitan/trims/trim-main/metropolitan/2023/2023-metropolitan-blue_metallic-650x380.png",
+            "description":"Honda Motor Scooters"
         },
 
         {
             "model": "Honda PCX150 Scooter",
             "maxpersons": 2,
-            "price": [
-                {
-                 "reservation": {
-                    "halfday": "$40",
-                    "fullday": "$50"
-                 },
-                 "walkin": {
-                    "halfday": "$45",
-                    "fullday": "$55"
-                 }   
-                }
-            ],
-            "img": "https://flux.somosmoto.pe/r/https://somosmoto.pe/images/models/colors/honda-pcx-150-2017-blanco-6203be.png?width=1082"
+            "reservhalfday(3hs)": "$40",
+            "reservfullday": "$50",
+            "walkinhalfday(3hs)": "$45",
+            "walkinfullday": "$55",
+            "img": "https://powersports.honda.com/-/media/products/family/metropolitan/trims/trim-main/metropolitan/2023/2023-metropolitan-blue_metallic-650x380.png",
+            "description":"Honda Motor Scooters"
         },
 
         {
             "model": "Honda Pioneer 1000",
             "maxpersons": 4,
-            "price": [
-                {
-                 "reservation": {
-                    "halfday": "$50",
-                    "fullday": "$70"
-                 },
-                 "walkin": {
-                    "halfday": "$60",
-                    "fullday": "$80"
-                 }   
-                }
-            ],
-            "img": "https://motos.honda.com.co/images/cms/1-Pioneer_1000_5_Limited_Edition_BROWN.png"
+            "reservhalfday(3hs)": "$50",
+            "reservfullday": "$70",
+            "walkinhalfday(3hs)": "$60",
+            "walkinfullday": "$80",
+            "img": "https://powersports.honda.com/-/media/products/family/metropolitan/trims/trim-main/metropolitan/2023/2023-metropolitan-blue_metallic-650x380.png",
+            "description":"Side-by-Side ATVs"
         },
 
         {
-            "model": "4-door Jeep Wrangler-manual  with a/c",
+            "model": "Jeep Wrangler - 4 door manuel with A/C",
             "maxpersons": 5,
-            "price": [
-                {
-                 "reservation": {
-                    "halfday": "$70",
-                    "fullday": "$100"
-                 },
-                 "walkin": {
-                    "halfday": "$85",
-                    "fullday": "$125"
-                 }   
-                }
-            ],
-            "img": "https://images.carprices.com/pricebooks_data/usa/colorized/2021/Jeep/View2/Wrangler/Unlimited_Sport_RHD/JLUL74_PSC.png"
+            "reservhalfday(3hs)": "$70",
+            "reservfullday": "$100",
+            "walkinhalfday(3hs)": "$85",
+            "walkinfullday": "$125",
+            "img": "https://powersports.honda.com/-/media/products/family/metropolitan/trims/trim-main/metropolitan/2023/2023-metropolitan-blue_metallic-650x380.png",
+            "description":"Jeeps"
         },
 
         {
-            "model": "2-door Jeep Wrangler-manual open air",
+            "model": "Jeep Wrangler - 2 door - open air - manuel",
             "maxpersons": 4,
-            "price": [
-                {
-                 "reservation": {
-                    "halfday": "$60",
-                    "fullday": "$85"
-                 },
-                 "walkin": {
-                    "halfday": "$70",
-                    "fullday": "$90"
-                 }   
-                }
-            ],
-            "img": "https://www.jeep.pe/wp-content/uploads/sites/4/2020/08/WranglerRubicon_GrisGranito-2.png"
+            "reservhalfday(3hs)": "$60",
+            "reservfullday": "$85",
+            "walkinhalfday(3hs)": "$70",
+            "walkinfullday": "$90",
+            "img": "https://powersports.honda.com/-/media/products/family/metropolitan/trims/trim-main/metropolitan/2023/2023-metropolitan-blue_metallic-650x380.png",
+            "description":"Jeeps"
         }
     ]
 }
