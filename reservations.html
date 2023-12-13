@@ -34,12 +34,65 @@
             🕶️
         </div>
     </header>
+    <main>
+        <section class="reserve">
+            <div>
+                <form method="get" action="confirmation.html">
+                    <label class="top">Start-Date*<input type="date" name="start-date" id="start-date" required></label>
+                    <label class="top">End-Date*<input type="date" name="end-date" id="end-date" required></label>
+                    <label class="top">First Name*<input type="text" name="fname" id="fname" required></label>
+                    <label class="top">Last Name*<input type="text" name="lname" id="lname" required></label>
+                    <label class="top">Countr*<input type="text" name="country" id="country" required></label>
+                    <label class="top">Email*<input type="email" name="email" id="email" required placeholder="sample@gmail.com"></label>
+                    <label class="top">Cell Phone*<input type="tel" name="telephone" id="telephone" required></label>
+                    <h2>Rental Type</h2>
+                    <label class="ml"><input type="radio" name="model" value="scooter">Honda Metropolitan (49cc) - 1 person</label>
+                    <label class="ml"><input type="radio" name="model" value="scooter">Honda Dio (110cc) - 2 person</label>
+                    <label class="ml"><input type="radio" name="model" value="scooter">Honda PCX150 (149cc) - 2 person</label>
+                    <label class="ml"><input type="radio" name="model" value="side-by-Side ATVs">Honda Pioneer 1000 - 4 person</label>
+                    <label class="ml"><input type="radio" name="model" value="jeeps">Jeep Wrangler - 4 door manuel with A/C - 5 person</label>
+                    <label class="ml"><input type="radio" name="model" value="jeeps">Jeep Wrangler - 2 door - open air - manuel - 4 person</label>
+                    </select>
+                    <label class="ml">Comments and Special Reserves<textarea name="description" maxlength="500" cols="40" rows="5"></textarea></label>
+                    <label><input type="hidden" name="timestamp" id="timestamp" value=""></label>
+                    <input class="submit" type="submit" value="Send Reservation">
+                </form>
+            </div>
+            <div>
+                <h2>Membership Levels Benefits</h2>
+                <h3>NP Membership</h3>
+                <ul>
+                    <li>For non-profit organizations. There is no fee.</li>
+                </ul>
+                <h3>Bronze Membership</h3>
+                <ul>
+                    <li>2x1 in municipal events</li>
+                    <li>20% discount on training</li>
+                    <li>5% discount on advertising</li>
+                    <li>Price: $20/month</li>
+                </ul>
 
+                <h3>Silver Membership</h3>
+                <ul>
+                    <li>2x1 in municipal events</li>
+                    <li>20% discount on special events (shows)</li>
+                    <li>40% discount on training</li>
+                    <li>15% discount on advertising</li>
+                    <li>Price: $80/month</li>
+                </ul>
 
-
-
-
-
+                <h3>Gold Membership</h3>
+                <ul>
+                    <li>Free entry to municipal events</li>
+                    <li>50% discount on special events (shows)</li>
+                    <li>50% discount on training</li>
+                    <li>60% discount on advertising</li>
+                    <li>20% discount in partner stores</li>
+                    <li>Fee of $180/month</li>
+                </ul>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <p>Location: Virgilo y Constantinopla, Carlos Paz</p>
