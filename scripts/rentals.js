@@ -24,7 +24,7 @@ async function getModels() {
     const response = await fetch(getModelsURL);
     const data = await response.json();
     console.log(data.rentals);
-    displayMembers(data.rentals);
+    displayModels(data.rentals);
 }
 
 const displayModels = (rentals) => {
