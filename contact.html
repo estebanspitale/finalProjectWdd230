@@ -27,7 +27,7 @@
                 <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="rentals.html">Rentals</a></li>
                 <li><a href="reservations.html">Reservations</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Contact.html">Contact</a></li>
             </ul>
         </nav>
         <div id="mode"> 
@@ -35,10 +35,41 @@
         </div>
     </header>
 
-
-
-
-
+    <main>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <p>Phone: +52 987 869 1985</p>
+            <p>Email: contact_scootscozumel@scootscozumel.com</p>
+            
+        </div>
+        <h2>Two locations on Cozumel</h2>
+        <div class="maps">
+            <div class="ubication1">
+                <h3>Playa del Carmen</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14947.53474334527!2d-86.95827411443042!3d20.510993881571082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cf3a0ece15%3A0x9216e3c2b55e5526!2sPlaya%20del%20Carmen-Cozumel%20Ferry%20Dock!5e0!3m2!1sen!2spe!4v1658231972962!5m2!1sen!2spe"
+                    width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="ubication2">
+                <h3>Puerta Maya</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14950.97773048018!2d-86.98405431444006!3d20.475687381880693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cd70625421%3A0xb1974a1818657af2!2sCozumel%20Cruise%20Terminal!5e0!3m2!1sen!2spe!4v1658232022573!5m2!1sen!2spe"
+                    width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form method="get" action="thankyou.html">
+                <label class="top">First Name*<input type="text" name="fname" id="fname" required></label>
+                <label class="top">Last Name*<input type="text" name="lname" id="lname" required></label>
+                <label class="top">Email*<input type="email" name="email" id="email" required placeholder="sample@gmail.com"></label>
+                <label class="top">Comments and Special Reserves<textarea name="description" maxlength="500" cols="40" rows="5"></textarea></label>
+                <label><input type="hidden" name="timestamp" id="timestamp" value=""></label>
+                <input class="submit" type="submit" value="Send">
+            </form>
+        </div>
+    </main>
 
     <footer>
         <p>Location: Virgilo y Constantinopla, Carlos Paz</p>

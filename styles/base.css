@@ -226,6 +226,7 @@ form label.top input:required:valid {
   padding: 1rem 0;
 }
 
+
 /* ------ DIRECTORY ------ */
 .directory {
   display: grid;
@@ -413,8 +414,30 @@ article {
   grid-column: 3/4;
   background-color: whitesmoke;
 }
-
-
+/*----- Contact ------*/
+.maps {
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  display:grid;
+  column-width: 40% 40%;
+}
+.ubication1 {
+  grid-column: 1/2;
+}
+.ubication2 {
+  grid-column: 2/3;
+}
+.contact {
+  text-align: center;
+  border: solid 1rem  #014397;
+  background-color: #43d0ff;
+}
+.contact-form {
+  border: solid 1rem  #014397;
+  background-color: #43d0ff;
+  padding: 10px;
+}
 @media screen and (min-width: 900px) {
 /* DIRECTORY */
     
