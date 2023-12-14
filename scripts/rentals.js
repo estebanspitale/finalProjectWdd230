@@ -1,168 +1,89 @@
-// // Grid and List
+const requestURL = 'https://estebanspitale.github.io/finalProjectWdd230/data/rentals.json';
 
-// const listbutton = document.querySelector("#list");
-// const gridbutton = document.querySelector("#grid");
-// const display = document.querySelector("article");
+fetch(requestURL)
+    .then(function (response) {
+        return response.json();
 
-
-// listbutton.addEventListener("click", () => {
-// 	display.classList.add("directory-list");
-// 	display.classList.remove("directory-grid");
-// });
-
-// gridbutton.addEventListener("click", () => {
-// 	display.classList.add("directory-grid");
-// 	display.classList.remove("directory-list");
-// });
-
-// // Rental models and prices
-
-// const getModelsURL = "https://estebanspitale.github.io/finalProjectWdd230/data/rentals.json";
-// const rentalsContainer = document.querySelector('.directory-grid');
-
-// async function getModels() {
-//     const response = await fetch(getModelsURL);
-//     const data = await response.json();
-//     console.log(data.rentals);
-//     displayModels(data.rentals);
-// }
-
-// const displayModels = (rentals) => {
-//     rentals.forEach((rental) => {
-//         let card = document.createElement('section');
-//         let model = document.createElement('h2');
-//         let maxpersons = document.createElement('p');
-//         let reservhalfday = document.createElement('p');
-//         let reservfullday = document.createElement('p');
-//         let walkinhalfday = document.createElement('p');
-//         let walkinfullday = document.createElement('p');
-//         let image = document.createElement('img');
-//         let description = document.createElement('p');
-        
-//         card.setAttribute('class', 'model-card');
-
-//         model.setAttribute('class', 'd-model');
-//         model.textContent = rental.model;
-        
-//         maxpersons.setAttribute('class', 'd-maxpersons');
-//         maxpersons.textContent = rental.maxpersons;
-
-//         reservhalfday.setAttribute('class', 'd-reservhalfday');
-//         reservhalfday.textContent = rental.reservhalfday;
-
-//         reservfullday.setAttribute('class', 'd-reservfullday');
-//         reservfullday.textContent = rental.reservfullday;
-
-//         walkinhalfday.setAttribute('class', 'd-walkinhalfday');
-//         walkinhalfday.textContent = rental.walkinhalfday;
-
-//         walkinfullday.setAttribute('class', 'd-walkinfullday');
-//         walkinfullday.textContent = rental.walkinfullday;
-
-
-//         image.setAttribute('class', 'd-image');
-//         image.setAttribute('src', rental.image);
-//         image.setAttribute('alt', `Logo of ${rental.model}`);
-//         image.setAttribute('loading', 'lazy');
-
-//         description.setAttribute('class', 'd-description');
-//         description.textContent = rental.description;
-
-
-//         card.appendChild(model);
-//         card.appendChild(maxpersons);
-//         card.appendChild(image);
-//         card.appendChild(reservhalfday);
-//         card.appendChild(reservfullday);
-//         card.appendChild(walkinhalfday);
-//         card.appendChild(walkinfullday);
-//         card.appendChild(description);
-
+    })
+    .then(function (jsonObject) {
+      
+        const rentals = jsonObject['rentals'];
+        let table = document.createElement('table');
+        let thead = document.createElement('thead');
+        let th = document.createElement('th');
+        let tr = document.createElement('tr');
+        let tr2 = document.createElement('tr');
+        let reservation = document.createElement('th');
+        let walkin = document.createElement('th');
+        let rentaltype = document.createElement('th');
+        let maxpersons = document.createElement('th');
+        let halfday = document.createElement('th');
+        let fullday = document.createElement('th');
+        let halfday2 = document.createElement('th');
+        let fullday2 = document.createElement('th');
 
         
-//         rentalsContainer.appendChild(card);
-//     });
-// }
+        reservation.textContent = "Reservation";
+        walkin.textContent = "Walk-In";
+        rentaltype.textContent = "Rental Type";
+        maxpersons.textContent = "Max. Persons";
+        halfday.textContent = "Half Day (3hrs)";
+        fullday.textContent = "Full Day";
+        halfday2.textContent = "Half Day (3hrs)";
+        fullday2.textContent = "Full Day";
 
-// getModels();
-
-
-// Grid and List
-
-const listbutton = document.querySelector("#list");
-const gridbutton = document.querySelector("#grid");
-const display = document.querySelector("article");
-
-
-listbutton.addEventListener("click", () => {
-	display.classList.add("directory-list");
-	display.classList.remove("directory-grid");
-});
-
-gridbutton.addEventListener("click", () => {
-	display.classList.add("directory-grid");
-	display.classList.remove("directory-list");
-});
-
-// Chamber Directory
-
-const getMembersURL = "https://estebanspitale.github.io/finalProjectWdd230/data/members.json";
-const directoryContainer = document.querySelector('.directory-grid');
-
-async function getMembers() {
-    const response = await fetch(getMembersURL);
-    const data = await response.json();
-    console.log(data.companies);
-    displayMembers(data.companies);
-}
-
-const displayMembers = (companies) => {
-    companies.forEach((company) => {
-        let card = document.createElement('section');
-        let name = document.createElement('h2');
-        let address = document.createElement('p');
-        let phone = document.createElement('a');
-        let webURL = document.createElement('a');
-        let image = document.createElement('img');
-        let membershipL = document.createElement('p');
-        
-        card.setAttribute('class', 'member-card');
-
-        name.setAttribute('class', 'd-name');
-        name.textContent = company.name;
-        
-        address.setAttribute('class', 'd-address');
-        address.textContent = company.address;
-
-        phone.setAttribute('class', 'd-phone');
-        phone.textContent = company.phone;
-        phone.setAttribute('href', `tel:${company.phone}`);
-
-        webURL.setAttribute('class', 'd-url');
-        webURL.textContent = company.websiteURL;
-        webURL.setAttribute('href', `https://${company.websiteURL}/`);
-        webURL.setAttribute('target', '_blank');
-
-        image.setAttribute('class', 'd-image');
-        image.setAttribute('src', company.image);
-        image.setAttribute('alt', `Logo of ${company.name}`);
-        image.setAttribute('loading', 'lazy');
-
-        membershipL.setAttribute('class', 'd-lvl');
-        membershipL.textContent = company.membershiplevel;
+       
+        th.setAttribute("colspan", "2");
+        reservation.setAttribute("colspan", "2");
+        walkin.setAttribute("colspan", "2");
 
 
-        card.appendChild(name);
-        card.appendChild(image);
-        card.appendChild(address);
-        card.appendChild(phone);
-        card.appendChild(webURL);
-        card.appendChild(membershipL);
-
+        table.appendChild(thead);
+        thead.appendChild(tr);
+        tr.appendChild(th);
+        tr.appendChild(reservation);
+        tr.appendChild(walkin);
+        thead.appendChild(tr2);
+        tr2.appendChild(rentaltype);
+        tr2.appendChild(maxpersons);
+        tr2.appendChild(halfday);
+        tr2.appendChild(fullday);
+        tr2.appendChild(halfday2);
+        tr2.appendChild(fullday2);
 
         
-        directoryContainer.appendChild(card);
+
+
+        for (let i = 0; i < rentals.length; i++) {
+
+            let tr = document.createElement('tr');
+            let vehicle = document.createElement('td');
+            let persons = document.createElement('td');
+            let reserveHalf = document.createElement('td');
+            let reserveFull = document.createElement('td');
+            let walkHalf = document.createElement('td');
+            let walkFull = document.createElement('td');
+
+
+
+            vehicle.textContent = rentals[i].vehicle;
+            persons.textContent = rentals[i].persons;
+            reserveHalf.textContent = rentals[i].reserveHalf;
+            reserveFull.textContent = rentals[i].reserveFull;
+            walkHalf.textContent = rentals[i].walkHalf;
+            walkFull.textContent = rentals[i].walkFull;
+
+
+
+            table.appendChild(vehicle);
+            table.appendChild(persons);
+            table.appendChild(reserveHalf);
+            table.appendChild(reserveFull);
+            table.appendChild(walkHalf);
+            table.appendChild(walkFull);
+            table.appendChild(tr);
+
+        }
+
+        document.querySelector('div.table').appendChild(table);
     });
-}
-
-getMembers();
