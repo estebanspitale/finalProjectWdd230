@@ -1,4 +1,4 @@
-const requestURL = 'https://estebanspitale.github.io/finalProjectWdd230/data/rentals.json';
+const requestURL = 'https://github.com/estebanspitale/finalProjectWdd230/blob/main/data/rentals.json';
 
 fetch(requestURL)
     .then(function (response) {
