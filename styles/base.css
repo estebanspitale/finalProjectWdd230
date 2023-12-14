@@ -151,7 +151,24 @@ footer p {
   text-align: var(--text-align);
   margin: 0;
 }
-
+/*---rentals---*/
+#rentals {
+  margin: 0.5rem;
+  justify-content: center;
+}
+#table-head th {
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 1.1rem;
+  padding: 5px;
+}
+.price-table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
 
 /* ---Reservation--- */
 
