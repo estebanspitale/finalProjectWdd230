@@ -152,7 +152,7 @@ footer p {
   margin: 0;
 }
 /*---rentals---*/
-h1 {
+h1, p{
   text-align: center;
 }
 
@@ -349,16 +349,4 @@ form label.top input:required:valid {
 #thankyou {
   background-color: #00fa6d;
 }
-@media screen and (min-width: 900px) {
-/* DIRECTORY */
-    
-.directory {
-  max-width: 1500px;
-  min-width: 800px;
-}
 
-.directory-list .d-name {
-  min-width: 250px;
-  width: auto;
-}
-}
